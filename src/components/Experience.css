@@ -1,0 +1,125 @@
+.experience-section {
+  padding: 15rem 6rem;
+  background: linear-gradient(to bottom, #ffffff 0%, #f6fbff 100%);
+  color: #1a1a1a;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #1b3c53;
+}
+
+.gradient-underline {
+  background: linear-gradient(to right, #578FCA, #1B3C53);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #dfe9f3;
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.circle-dot {
+  width: 14px;
+  height: 14px;
+  background: #578fca;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px #1b3c53;
+}
+
+.experience-content h4 {
+  font-size: 1.2rem;
+  color: #1b3c53;
+  margin-bottom: 0.3rem;
+}
+
+.experience-content .company {
+  font-weight: 500;
+  color: #555;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.experience-content .duration {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.experience-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Bullet List inside experience */
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.bullet-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .experience-section {
+    padding: 3rem 1rem;
+  }
+
+  .experience-card {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .circle-dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.8rem;
+    margin-top: 4px;
+    box-shadow: 0 0 0 2px #1b3c53;
+  }
+
+  .experience-content h4 {
+    font-size: 1rem;
+  }
+
+  .experience-content p {
+    font-size: 0.9rem;
+  }
+
+  .bullet-list li {
+    font-size: 0.9rem;
+  }
+}

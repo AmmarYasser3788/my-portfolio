@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to top right, #dceeff, #e9f3fb);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: #1a1a1a;
+}
+
+
+/* Masculine blurred blobs */
+
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  filter: blur(160px);
+  opacity: 0.55;
+}
+
+
+
+body::after {
+  background: #a3cbe8; /* Dark navy */
+  bottom: 10%;
+  right: -150px;
+}
+
+
+
+
+
+.hero span {
+  color: #0077cc;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 1rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
