@@ -9,7 +9,7 @@ const projects = [
     codeLink: "https://github.com/AmmarYasser3788"
   },
   {
-    name: "Pizza Resturant",
+    name: "Pizza Restaurant ",
     image: "/images/pizza.jpeg",
     description: "A modern online store with cart and payment features Using .Net."
   },
