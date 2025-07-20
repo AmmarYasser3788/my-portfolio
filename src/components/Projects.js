@@ -11,12 +11,14 @@ const projects = [
   {
     name: "Pizza Restaurant ",
     image: "/images/pizza.jpeg",
-    description: "A modern online store with cart and payment features Using .Net."
-  },
+    description: "A modern online store with cart and payment features Using .Net.",
+    codeLink: "https://github.com/AmmarYasser3788"
+    },
   {
     name: "To Do List App",
     image: "/images/Todolist.jpeg",
-    description: "A modern online To Do List Application using React."
+    description: "A modern online To Do List Application using React.",
+    codeLink: "https://github.com/AmmarYasser3788"
   },
 ];
 

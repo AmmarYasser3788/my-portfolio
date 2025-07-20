@@ -15,7 +15,7 @@ function Contact() {
       <div className="contact-info">
         <div className="contact-item">
           <span>📞</span>
-          <p>+20 112 028 5523</p> {/* Replace with your real number */}
+          <a href="tel:01120285523">+20 112 028 5523</a> 
         </div>
 
         <div className="contact-item">

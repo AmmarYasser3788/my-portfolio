@@ -65,6 +65,17 @@ function About() {
             <h4>Quality Driven</h4>
             <p>Delivering reliable, tested code every time.</p>
           </div>
+          <div className="card">
+    <span>🔒</span>
+    <h4>Security Focused</h4>
+    <p>Implementing secure coding practices to protect users and data.</p>
+  </div>
+  
+  <div className="card">
+  <span>🧩</span>
+  <h4>Project Delivery</h4>
+  <p>Built and shipped complete software solutions.</p>
+</div>
         </div>
       </div>
 

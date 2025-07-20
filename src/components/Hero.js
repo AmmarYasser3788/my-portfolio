@@ -2,28 +2,28 @@ import React from 'react';
 import './Hero.css';
 
 function Hero() {
-    // 💡 Fast scroll function
-    const fastScrollTo = (targetId) => {
-      const target = document.getElementById(targetId);
-      if (!target) return;
-  
-      const startY = window.pageYOffset;
-      const endY = target.offsetTop;
-      const distance = endY - startY;
-      const duration = 200; // milliseconds — fast!
-  
-      let start;
-  
-      const step = (timestamp) => {
-        if (!start) start = timestamp;
-        const progress = timestamp - start;
-        const percent = Math.min(progress / duration, 1);
-        window.scrollTo(0, startY + distance * percent);
-        if (percent < 1) requestAnimationFrame(step);
-      };
-  
-      requestAnimationFrame(step);
+  // 💡 Fast scroll function
+  const fastScrollTo = (targetId) => {
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    const startY = window.pageYOffset;
+    const endY = target.offsetTop;
+    const distance = endY - startY;
+    const duration = 200; // milliseconds — fast!
+
+    let start;
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percent = Math.min(progress / duration, 1);
+      window.scrollTo(0, startY + distance * percent);
+      if (percent < 1) requestAnimationFrame(step);
     };
+
+    requestAnimationFrame(step);
+  };
   return (
     <section className="hero" id="home">
       <div className="avatar">
@@ -38,8 +38,7 @@ function Hero() {
       </p>
       <h3>Frontend Developer & Software Engineer</h3>
       <p className="description">
-        Passionate about building fast, elegant web applications using modern technologies.
-        Specialized in React, JavaScript, and creating seamless user experiences.
+        Passionate about building fast, elegant web applications using modern technologies. Specialized in React, JavaScript, and building integrated frontend-backend solutions
       </p>
       <div className="hero-buttons">
         <button
